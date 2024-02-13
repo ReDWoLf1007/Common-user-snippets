@@ -1,0 +1,21 @@
+{
+	"class": {
+		
+		"prefix": "class",
+		"body": [
+			"class ${1:class_name}",
+			"{",
+			"	private:",
+			"		$2",
+			"	protected:",
+			"		$3",
+			"	public:",
+			"		$0",
+			"};",
+			""
+		],
+		"description": "Class basic structure"
+	}
+
+	
+}

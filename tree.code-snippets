@@ -1,0 +1,25 @@
+{
+	"Boilerplate": {
+		"prefix": "tree",
+		"body": [
+			"struct ${1:node}",
+			"{",
+			"	int data;",
+			"	struct ${1:node}* left;",
+			"	struct ${1:node}* right;",
+			"	"
+			"};",
+			"",
+			"struct node* newNode(int data)",
+			"{",
+			"	struct node *node = (struct node *)malloc(sizeof(struct node));",
+			"	node->data = data;",
+			"	node->left = NULL;",
+			"	node->right = NULL;",
+			"	return (node);",
+			"}",
+			"$0"
+		],
+		"description": "Tree Structure"
+	}
+}
